@@ -1,0 +1,5 @@
+export const VAPI_PUBLIC_KEY =
+  process.env.NEXT_PUBLIC_VAPI_PUBLIC_KEY ?? "055309dc-f178-4bca-88df-43c573eeb1be";
+
+export const VAPI_ASSISTANT_ID =
+  process.env.NEXT_PUBLIC_VAPI_ASSISTANT_ID ?? "03c03604-9c48-44d1-8da1-92550037f96e";
