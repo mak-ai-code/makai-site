@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import { VoiceDemoTrigger } from "@/components/voice-demo/voice-demo";
 import { TechGrid } from "@/components/fx/tech-grid";
 import { Magnetic } from "@/components/fx/magnetic";
+import { CalendlyButton } from "@/components/calendly-button";
 
 const FacetedM = dynamic(
   () => import("./faceted-m").then((m) => m.FacetedM),
@@ -81,12 +82,9 @@ export function Hero() {
             <VoiceDemoTrigger />
           </Magnetic>
           <Magnetic>
-            <a
-              href="#contact"
-              className="inline-flex items-center justify-center gap-3 px-7 py-4 text-[13px] uppercase tracking-[0.18em] border border-[var(--line-3)] hover:bg-[var(--fg)] hover:text-[var(--bg)] hover:border-[var(--fg)] transition-all duration-300"
-            >
+            <CalendlyButton className="inline-flex items-center justify-center gap-3 px-7 py-4 text-[13px] uppercase tracking-[0.18em] border border-[var(--line-3)] hover:bg-[var(--fg)] hover:text-[var(--bg)] hover:border-[var(--fg)] transition-all duration-300">
               Book a call →
-            </a>
+            </CalendlyButton>
           </Magnetic>
         </motion.div>
       </motion.div>

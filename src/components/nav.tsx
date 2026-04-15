@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { CalendlyButton } from "@/components/calendly-button";
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -36,12 +37,11 @@ export function Nav() {
           <li><a href="#team" className="hover:text-[var(--fg)] transition-colors">Team</a></li>
           <li><a href="#contact" className="hover:text-[var(--fg)] transition-colors">Contact</a></li>
         </ul>
-        <a
-          href="#contact"
+        <CalendlyButton
           className="text-[11px] uppercase tracking-[0.18em] border border-[var(--line-3)] px-5 py-2.5 hover:bg-[var(--fg)] hover:text-[var(--bg)] hover:border-[var(--fg)] transition-all"
         >
           Book a call
-        </a>
+        </CalendlyButton>
       </div>
     </motion.nav>
   );

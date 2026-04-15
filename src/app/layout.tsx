@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { Spotlight } from "@/components/fx/spotlight";
 import { ScrollProgress } from "@/components/fx/scroll-progress";
@@ -52,6 +53,12 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${space.variable} ${jetbrains.variable} h-full antialiased`}
     >
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://assets.calendly.com/assets/external/widget.css"
+        />
+      </head>
       <body className="min-h-full flex flex-col bg-bg text-fg relative overflow-x-hidden">
         {children}
         <Spotlight />
@@ -60,6 +67,10 @@ export default function RootLayout({
         <Hud />
         <div className="grain" aria-hidden />
         <div className="vignette" aria-hidden />
+        <Script
+          src="https://assets.calendly.com/assets/external/widget.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
