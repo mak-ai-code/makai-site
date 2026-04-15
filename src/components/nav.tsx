@@ -34,7 +34,7 @@ export function Nav() {
           <li><a href="#services" className="hover:text-[var(--fg)] transition-colors">Services</a></li>
           <li><a href="#work" className="hover:text-[var(--fg)] transition-colors">Work</a></li>
           <li><a href="#process" className="hover:text-[var(--fg)] transition-colors">Process</a></li>
-          <li><a href="#team" className="hover:text-[var(--fg)] transition-colors">Team</a></li>
+          <li><a href="#reviews" className="hover:text-[var(--fg)] transition-colors">Reviews</a></li>
           <li><a href="#contact" className="hover:text-[var(--fg)] transition-colors">Contact</a></li>
         </ul>
         <CalendlyButton

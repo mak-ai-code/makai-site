@@ -8,7 +8,7 @@ import { Terminal } from "@/components/terminal";
 import { Work } from "@/components/work";
 import { Proof } from "@/components/proof";
 import { Process } from "@/components/process";
-import { Team } from "@/components/team";
+import { Reviews } from "@/components/reviews";
 import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
 import { VoiceDemoModal } from "@/components/voice-demo/voice-demo";
@@ -25,9 +25,9 @@ export default function Home() {
         <Showcase />
         <Terminal />
         <Work />
+        <Reviews />
         <Proof />
         <Process />
-        <Team />
         <Contact />
       </main>
       <Footer />

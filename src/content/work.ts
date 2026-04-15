@@ -7,18 +7,18 @@ export type Work = {
 
 export const work: Work[] = [
   {
-    title: "Vault Med Spa",
-    kind: "Landing Page · Med Spa",
+    title: "MakAI Command",
+    kind: "Custom Software · Business OS",
     pitch:
-      "High-converting landing page for a luxury med spa. Service breakdowns, social proof, FAQ, and a booking flow that turns ad traffic into consultations.",
-    href: "/demos/vault-med-spa",
+      "Internal app that tracks every business under one roof — daily tasks, progress analytics, brain dumps, and a built-in music player. Built for the founder, by the founder.",
+    href: "/demos/makai-command",
   },
   {
-    title: "AutoFlow Dashboard",
-    kind: "CRM · Automation",
+    title: "MakAI Sales Platform",
+    kind: "Custom Software · Sales",
     pitch:
-      "AI-powered CRM dashboard with a kanban pipeline, live activity feed, and real-time stats. Built to show how voice agents and automations work behind the scenes.",
-    href: "/demos/autoflow-dashboard",
+      "Full sales team management platform — pipeline tracking, rep assignments, and performance dashboards. Built to scale outbound ops.",
+    href: "/demos/makai-sales-platform",
   },
   {
     title: "Frazier's Aircraft Cleaning",
@@ -32,6 +32,6 @@ export const work: Work[] = [
     kind: "Voice Agent · Demo",
     pitch:
       "The live AI voice agent on this site. Try it — click 'Talk to our agent' and have a real conversation.",
-    href: "#voice-demo",
+    href: "/demos/vault-med-spa",
   },
 ];
